@@ -1,0 +1,187 @@
+.body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Header */
+.header{
+    height: 100px;
+    width: 100%;
+    padding: 0;
+    background-color: #101010;
+    font-family: 'Inter', sans-serif;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 65px;
+    padding-left: 5px;
+}
+.nav-links{
+    padding: 28px 0;
+}
+.nav-links li{
+    display: inline-block;
+    margin: 0  15px;
+    font-size: 1.2em;
+    padding-left: 15px;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 0;
+    position: relative;
+}
+.nav-links li a::after{
+    content: '';
+    background: green;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+.nav-links li a:hover::after{
+    width: 100%;
+}
+
+/* Hero banner */
+.hero-banner-img{
+    width:auto;
+    height: 650px;
+    position: relative;
+    background: url(../img/hero-banner.jpg) no-repeat center;
+    background-size: cover;
+  }
+  
+  .hero-banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+  }
+    
+  .hero-banner h1{
+    font-size: 5em;
+    letter-spacing: 0.2em;
+    margin: 0;
+  }
+  
+  .hero-banner h1 span{
+    border: 10px solid black;
+    padding: 6px 14px;
+    display: inline-block;
+  }
+  
+  .slogen{
+    margin: 20px;
+    display: block;
+    font-size: 3em;
+    text-shadow: 0 0 10px black;
+  }
+  
+  .about h2{
+    color: black;
+    position: relative;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .about h3{
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    color: black;
+    position: relative;
+    text-align: center;
+    font-size: 15px;
+  }
+  
+  .about{
+    float: left;
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 80px;
+    height: 300px;
+    font-family: 'Inter', sans-serif;
+  }
+
+.column {
+    float: left;
+    width: 33.33%;
+   
+  }
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+/* Footer */
+.footer {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    padding: 50px 0;
+    box-sizing: border-box;
+    background-color: blue;
+  }
+.inner-footer{
+    width: 1100px;
+    display: block;
+    margin: 0 auto;
+}
+
+.inner-footer .logo-container{
+    width: 35%;
+    float: left;
+    height: 100%;
+    display: block;
+}
+.inner-footer .logo-container img{
+    width: 65px;
+    height: auto;
+}
+
+.inner-footer .footer-third{
+    width: calc(21%  - 20px);
+    margin-right: 10px;
+    float: left;
+    height: 100%;
+}
+
+.inner-footer .footer-third:last-child{
+    margin-right: 0;
+}
+
+.inner-footer .footer-third h5{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: white;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.inner-footer .footer-third a{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: white;
+    display: block;
+    font-weight: 200;
+    width: 100%;
+    padding-bottom: 5px;
+}
